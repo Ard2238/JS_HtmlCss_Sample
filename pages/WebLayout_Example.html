@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flex Sample </title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                height: 80vh;
+            }
+            .navContainer {
+                background-color: #D7E8D4;
+                flex: 1;
+                font-weight: bold;
+                text-align: center;
+                font-size: 30px;
+            }
+            .mainContainer {
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+                height: 80vh;
+            }
+            header, footer{
+                background: yellowgreen;
+                height: 10vh;
+                font-weight: bold;
+                text-align: center;
+                font-size: 20px; 
+                padding: 10px;;  
+            }
+            article {
+                height: 60vh;
+                background: white;
+            }
+            .belowHeader {
+                display: flex;
+                flex-direction: row;
+            }
+            .leftColBelowHeader {
+                flex: 4;
+            }
+            .sideBar {
+                flex: 1;
+                background: lightblue;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navContainer">NAV</nav>
+        <div class= "mainContainer">
+            <header>HEADER - SAMPLE FLEXBOX</header>
+            <div class="belowHeader">
+                <div class="leftColBelowHeader">
+                    <article>
+                        <h2>ARTICLE 1</h2>
+                        <p>A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it.[1] The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.[2][3]</p>
+                    </article>
+                    <footer>FOOTER</footer>
+                </div>
+                <aside class="sideBar">RIGHT SIDE BAR</aside>                
+            </div>
+        </div>
+    </body>
+</html>
